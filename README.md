@@ -3,7 +3,19 @@
 
 Refrenced paper : HDLTex: Hierarchical Deep Learning for Text Classification
 
-Documentation
+Documentation:
+
+**Datasets for HDLTex:** 
+Web of Science Dataset [WOS-11967](#)
+
+        sakj
+Web of Science Dataset [WOS-46985](#)
+
+        ksjaks
+      
+Web of Science Dataset [WOS-5736](#)
+
+        slkaxk
 
 
 
