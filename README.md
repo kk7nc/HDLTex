@@ -25,7 +25,9 @@ $ sudo apt-get install libcupti-dev
 
 General:
 
-TensorFlow see [Instruction Documents] (https://www.tensorflow.org/install/install_linux)
-scikit-learn see [Instruction Documents] (http://scikit-learn.org/stable/install.html)
-scipy see [Instruction Documents] (https://www.scipy.org/install.html)
+TensorFlow see [Instruction Documents](https://www.tensorflow.org/install/install_linux).
+
+scikit-learn see [Instruction Documents](http://scikit-learn.org/stable/install.html)
+
+scipy see [Instruction Documents](https://www.scipy.org/install.html)
 
