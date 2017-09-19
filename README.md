@@ -7,7 +7,7 @@ Requirment :
 
 GPU:
 
-CUDA® Toolkit 8.0. For details, see NVIDIA's documentation. 
+CUDA® Toolkit 8.0. For details, see(https://developer.nvidia.com/cuda-toolkit) [NVIDIA's documentation](https://developer.nvidia.com/cuda-toolkit). 
 
 The NVIDIA drivers associated with CUDA Toolkit 8.0.
 
@@ -21,5 +21,5 @@ To install this library, issue the following command:
 
 ```
 $ sudo apt-get install libcupti-dev
-'''
+```
 
