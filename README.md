@@ -7,11 +7,11 @@ Requirment :
 
 GPU:
 
-CUDA® Toolkit 8.0. For details, see(https://developer.nvidia.com/cuda-toolkit) [NVIDIA's documentation](https://developer.nvidia.com/cuda-toolkit). 
+CUDA® Toolkit 8.0. For details, see [NVIDIA's documentation](https://developer.nvidia.com/cuda-toolkit). 
 
-The NVIDIA drivers associated with CUDA Toolkit 8.0.
+The [NVIDIA drivers associated with CUDA Toolkit 8.0](http://www.nvidia.com/Download/index.aspx).
 
-cuDNN v6. For details, see NVIDIA's documentation. 
+cuDNN v6. For details, see [NVIDIA's documentation](https://developer.nvidia.com/cudnn). 
 
 GPU card with CUDA Compute Capability 3.0 or higher.
 
@@ -22,4 +22,10 @@ To install this library, issue the following command:
 ```
 $ sudo apt-get install libcupti-dev
 ```
+
+General:
+
+TensorFlow see [Instruction Documents] (https://www.tensorflow.org/install/install_linux)
+scikit-learn see [Instruction Documents] (http://scikit-learn.org/stable/install.html)
+scipy see [Instruction Documents] (https://www.scipy.org/install.html)
 
