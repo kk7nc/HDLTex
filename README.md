@@ -32,6 +32,8 @@ TensorFlow see [Instruction Documents](https://www.tensorflow.org/install/instal
 
 scikit-learn see [Instruction Documents](http://scikit-learn.org/stable/install.html)
 
+Keras see [Instruction Documents](https://keras.io/)
+
 scipy see [Instruction Documents](https://www.scipy.org/install.html)
 
 GPU:
