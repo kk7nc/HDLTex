@@ -3,7 +3,7 @@
 
 Refrenced paper : HDLTex: Hierarchical Deep Learning for Text Classification
 
-Documentation:
+**Documentation:**
 
 **Datasets for HDLTex:** 
 
@@ -21,7 +21,18 @@ Web of Science Dataset [WOS-5736](#)
 
 
 
-Requirment :
+**Requirment :**
+
+
+General:
+
+Python 3.5 or later see [Instruction Documents](https://www.python.org/)
+
+TensorFlow see [Instruction Documents](https://www.tensorflow.org/install/install_linux).
+
+scikit-learn see [Instruction Documents](http://scikit-learn.org/stable/install.html)
+
+scipy see [Instruction Documents](https://www.scipy.org/install.html)
 
 GPU:
 
@@ -40,14 +51,4 @@ To install this library, issue the following command:
 ```
 $ sudo apt-get install libcupti-dev
 ```
-
-General:
-
-Python 3.5 or later see [Instruction Documents](https://www.python.org/)
-
-TensorFlow see [Instruction Documents](https://www.tensorflow.org/install/install_linux).
-
-scikit-learn see [Instruction Documents](http://scikit-learn.org/stable/install.html)
-
-scipy see [Instruction Documents](https://www.scipy.org/install.html)
 
