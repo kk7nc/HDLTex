@@ -1,4 +1,4 @@
-# HDLTex: Hierarchical Deep Learning for Text Classification
+# HDLTex: [Hierarchical Deep Learning for Text Classification](https://arxiv.org/abs/1709.08267)
 
 
 Refrenced paper : HDLTex: Hierarchical Deep Learning for Text Classification
