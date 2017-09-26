@@ -1,6 +1,6 @@
 # HDLTex: [Hierarchical Deep Learning for Text Classification](https://arxiv.org/abs/1709.08267)
 
-
+All code: coming soon
 Refrenced paper : HDLTex: Hierarchical Deep Learning for Text Classification
 
 **Documentation:**
