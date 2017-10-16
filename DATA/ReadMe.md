@@ -18,25 +18,39 @@ Description of Dataset:
 
 Here is three datasets which include WOS-11967 , WOS-46985, and WOS-5736
 Each folder contains:
+
 -X.txt 
+
 -Y.txt
+
 -YL1.txt
+
 -YL2.txt
 
+
 X is input data that include text sequences 
+
 Y is target value 
+
 YL1 is target value of level one (parent label)
+
 YL2 is target value of level one (child label)
 
 Meta-data:
+
 This folder contain on data file as following attribute:
 Y1	Y2	Y	Domain	area	keywords	Abstract
 
 Abstract is input data that include text sequences of  46,985 published paper
+
 Y is target value 
+
 YL1 is target value of level one (parent label)
+
 YL2 is target value of level one (child label)
+
 Domain is majaor domain which include 7 labales: {Computer  Science,Electrical  Engineering,  Psychology,  Mechanical  Engineering,Civil  Engineering,  Medical  Science,  biochemistry}
+
 area is subdomain or area of the paper such as CS-> computer graphics which contain 134 labels.
 keywords : is authors keyword of the papers
 
