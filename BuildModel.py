@@ -22,7 +22,7 @@ def buildModel_DNN(Shape, nClasses, nLayers=3,Number_Node=100, dropout=0.5):
     model.add(Dense(Number_Node, input_dim=Shape))
     model.add(Dropout(dropout))
     for i in range(0,nLayers):
-        model.add(Dense(Number_Node,input_dim=Number_Node))
+        model.add(Dense(Number_Node, activation='relu'))
         model.add(Dropout(dropout))
     model.add(Dense(nClasses, activation='softmax'))
     model.compile(loss='sparse_categorical_crossentropy',

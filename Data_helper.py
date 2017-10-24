@@ -166,7 +166,7 @@ def loadData():
         contentL2 = [x.strip() for x in contentL2]
     Label = np.matrix(contentk, dtype=int)
     Label = np.transpose(Label)
-    number_of_classes_L1 = np.unique(Label).shape[0]  # number of classes in Level 1
+    number_of_classes_L1 = np.max(Label)+1  # number of classes in Level 1
 
     Label_L2 = np.matrix(contentL2, dtype=int)
     Label_L2 = np.transpose(Label_L2)
@@ -209,4 +209,5 @@ def loadData():
         L2_Test[i] = np.array(L2_Test[i])
         content_L2_Train[i] = np.array(content_L2_Train[i])
         content_L2_Test[i] = np.array(content_L2_Test[i])
+
     return (X_train,y_train,X_test,y_test,content_L2_Train,L2_Train,content_L2_Test,L2_Test,number_of_classes_L2)
