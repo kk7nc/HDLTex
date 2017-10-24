@@ -76,7 +76,7 @@ Web of Science Dataset WOS-5736
 
 
 
-Referenced paper: HDLTex: Hierarchical Deep Learning for Text Classification
+Referenced paper: [HDLTex: Hierarchical Deep Learning for Text Classification](https://arxiv.org/abs/1709.08267)
 
 Bib:
 
