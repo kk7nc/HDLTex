@@ -82,13 +82,8 @@ Bib:
 
       @inproceedings{kowsari2017HDLTex,
         title={HDLTex: Hierarchical Deep Learning for Text Classification},
-
         author={Kowsari, Kamran and Brown, Donald E and Heidarysafa, Mojtaba and Jafari Meimandi, Kiana and and Gerber, Matthew S and Barnes, Laura E},
-
         booktitle={Machine Learning and Applications (ICMLA), 2017 16th IEEE International Conference on},
-
         year={2017},
-
         organization={IEEE}
-
-}
+      }
