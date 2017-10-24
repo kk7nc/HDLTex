@@ -1,11 +1,6 @@
-from keras.layers.wrappers import Bidirectional
-from keras.optimizers import SGD
-from keras.layers import Dropout
 from keras.models import Sequential
-from keras.layers import Dense
 from keras.models import Model
 import numpy as np
-import theano
 from keras.layers import Dense, Input, Flatten
 from keras.layers import Conv1D, MaxPooling1D, Embedding, Merge, Dropout, LSTM, GRU, Bidirectional,SimpleRNN
 '''

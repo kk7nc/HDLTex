@@ -1,16 +1,9 @@
 import os
 os.environ["THEANO_FLAGS"] = "mode=FAST_RUN"
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score
 import numpy as np
-from operator import itemgetter
-import numpy
 from keras.models import Sequential
 import Data_helper
 import BuildModel
-from sklearn.feature_extraction.text import CountVectorizer
-from itertools import chain
-import keras.backend.tensorflow_backend as K
 os.environ['THEANO_FLAGS'] = "device=gpu1"
 
 if __name__ == "__main__":
@@ -93,7 +86,6 @@ if __name__ == "__main__":
         for i in range(0, number_of_classes_L1):
             print('Create Sub model of ', i)
             HDLTex.append(Sequential())
-            print("Run Model %d for %d Lables",i,number_of_classes_L2[i])
             HDLTex[i] = BuildModel.buildModel_RNN(word_index, embeddings_index,number_of_classes_L2[i],MAX_SEQUENCE_LENGTH,EMBEDDING_DIM)
             HDLTex[i].fit(content_L2_Train[i], L2_Train[i],
                           validation_data=(content_L2_Test[i], L2_Test[i]),

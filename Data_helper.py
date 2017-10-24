@@ -1,6 +1,4 @@
 import re
-import os
-import numpy as np
 from sklearn.cross_validation import train_test_split, cross_val_score
 from sklearn.feature_extraction.text import CountVectorizer
 from keras.preprocessing.text import Tokenizer
