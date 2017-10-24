@@ -19,13 +19,13 @@ Description of Dataset:
 Here is three datasets which include WOS-11967 , WOS-46985, and WOS-5736
 Each folder contains:
 
--X.txt 
+      -X.txt 
 
--Y.txt
+      -Y.txt
 
--YL1.txt
+      -YL1.txt
 
--YL2.txt
+      -YL2.txt
 
 
 X is input data that include text sequences 
