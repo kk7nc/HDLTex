@@ -16,6 +16,7 @@ Refrenced paper : [HDLTex: Hierarchical Deep Learning for Text Classification](h
 Web of Science Dataset [WOS-11967](https://github.com/kk7nc/HDLTex/tree/master/DATA)
 
         This dataset contains 11,967 documents with 35 categories which include 7 parents categories.
+        
 Web of Science Dataset [WOS-46985](https://github.com/kk7nc/HDLTex/tree/master/DATA)
 
         This dataset contains 46,985 documents with 134 categories which include 7 parents categories.
