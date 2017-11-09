@@ -59,4 +59,9 @@ To install this library, issue the following command:
 ```
 $ sudo apt-get install libcupti-dev
 ```
+**Feature Extraction:**
+
+Global Vectors for Word Representation ([GLOVE](https://nlp.stanford.edu/projects/glove/))
+        For CNN and RNN you need to download and linked the folder location to GLOVE
+
 
