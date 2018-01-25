@@ -2,6 +2,8 @@
 
 Refrenced paper : [HDLTex: Hierarchical Deep Learning for Text Classification](https://arxiv.org/abs/1709.08267)
 
+DOI: [10.1109/ICMLA.2017.0-134](https://doi.org/10.1109/ICMLA.2017.0-134)
+
 ![picture](http://kowsari.net/____impro/1/onewebmedia/HDLTex.png?etag=W%2F%22c90cd-59c4019b%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=821%2B326&extract=0%2B0%2B821%2B325?raw=false "HDLTex as both Hierarchy lavel are DNN")
 
 
@@ -66,26 +68,3 @@ $ sudo apt-get install libcupti-dev
 Global Vectors for Word Representation ([GLOVE](https://nlp.stanford.edu/projects/glove/))
 
         For CNN and RNN you need to download and linked the folder location to GLOVE
-
-
-Reference Bib:
-
-@INPROCEEDINGS{kowsari2017HDLTex,
-
-author={Kowsari, Kamran and Brown, Donald E and Heidarysafa, Mojtaba and Jafari Meimandi, Kiana and Gerber, Matthew S and Barnes, Laura E}, 
-
-booktitle={ICMLA},
-
-title={HDLTex: Hierarchical Deep Learning for Text Classification}, 
-
-year={2017}, 
-
-pages={364-371}, 
-
-keywords={Computer architecture;Kernel;Machine learning;Mathematical model;Recurrent neural networks;Support vector machines;Deep Learning;Deep Neural Networks;Document Classification;Hierarchical Learning;Text Mining}, 
-
-doi={10.1109/ICMLA.2017.0-134},
-
-month={Dec},}
-
-
