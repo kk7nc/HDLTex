@@ -3,6 +3,7 @@ from sklearn.cross_validation import train_test_split, cross_val_score
 from sklearn.feature_extraction.text import CountVectorizer
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
+import WOS_input as WOS
 import numpy as np
 import os
 
@@ -52,9 +53,10 @@ def text_cleaner(text):
 
 def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
     ''' Location of the dataset'''
-    fname = "../Data/WOS5736/X.txt"
-    fnamek = "../Data/WOS5736/YL1.txt"
-    fnameL2 = "../Data/WOS5736/YL2.txt"
+    WOS.download_and_extract()
+    fname = "Data_WOS/WebOfScience/WOS5736/X.txt"
+    fnamek = "Data_WOS/WebOfScience/WOS5736/YL1.txt"
+    fnameL2 = "Data_WOS/WebOfScience/WOS5736/YL2.txt"
     GLOVE_DIR = "D:/glove/" # location of Glove dirctory you can download it from
     # https://nlp.stanford.edu/projects/glove/
     with open(fname) as f:
@@ -149,10 +151,10 @@ def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
 
 
 def loadData():
-
-    fname = "../Data/WOS5736/X.txt"
-    fnamek = "../Data/WOS5736/YL1.txt"
-    fnameL2 = "../Data/WOS5736/YL2.txt"
+    WOS.download_and_extract()
+    fname = "Data_WOS/WebOfScience/WOS5736/X.txt"
+    fnamek = "Data_WOS/WebOfScience/WOS5736/YL1.txt"
+    fnameL2 = "Data_WOS/WebOfScience/WOS5736/YL2.txt"
     with open(fname) as f:
         content = f.readlines()
         content = [text_cleaner(x) for x in content]
