@@ -14,18 +14,18 @@ DOI: [10.1109/ICMLA.2017.0-134](https://doi.org/10.1109/ICMLA.2017.0-134)
 
 **Datasets for HDLTex:** 
 
-Linke of dataset: [http://dx.doi.org/10.17632/9rw3vkcfy4.2](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
+Linke of dataset: [DOI: 10.17632/9rw3vkcfy4.2](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
 
 
-Web of Science Dataset [WOS-11967](https://github.com/kk7nc/HDLTex/tree/master/DATA)
+Web of Science Dataset [WOS-11967](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
 
         This dataset contains 11,967 documents with 35 categories which include 7 parents categories.
         
-Web of Science Dataset [WOS-46985](https://github.com/kk7nc/HDLTex/tree/master/DATA)
+Web of Science Dataset [WOS-46985](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
 
         This dataset contains 46,985 documents with 134 categories which include 7 parents categories.
       
-Web of Science Dataset [WOS-5736](https://github.com/kk7nc/HDLTex/tree/master/DATA)
+Web of Science Dataset [WOS-5736](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
 
         This dataset contains 5,736 documents with 11 categories which include 3 parents categories.
 
