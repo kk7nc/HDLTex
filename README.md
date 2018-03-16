@@ -8,7 +8,28 @@ DOI: [10.1109/ICMLA.2017.0-134](https://doi.org/10.1109/ICMLA.2017.0-134)
 
 
 
+## Installation ##
 
+There are git RMDL in this repository; to clone all the needed files, please use:
+
+    git clone --recursive https://github.com/kk7nc/HDLTex.git
+     
+     
+The primary requirements for this package are Python 3 with Tensorflow. The requirements.txt file contains a listing of the required Python packages; to install all requirements, run the following:
+    
+    pip -r install requirements.txt
+    
+Or
+
+    pip3  install -r requirements.txt
+
+Or:
+
+    conda install --file requirements.txt
+        
+If the above command does not work, use the following:
+
+    sudo -H pip  install -r requirements.txt
 
 **Documentation:**
 
