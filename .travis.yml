@@ -1,8 +1,13 @@
-language: python
-python:
-  - "3.5"
+before_install: pip install tensorflow
 cache: pip
-install:
-  - pip install -r requirements.txt
-script:
-  - python HDLTex.py
+deploy:
+  on:
+    distributions: sdist bdist_wheel
+    repo: kk7nc/HDLTex
+    tags: true
+dist: trusty
+env:
+  - KERAS_BACKEND=tensorflow
+install: pip install --editable .
+language: python
+script: pytest
