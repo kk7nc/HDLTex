@@ -1,5 +1,8 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/kk7nc/HDLTex/blob/master/LICENSE)
-[![license](http://kowsari.net/HDLTex_DOI.svg)](https://doi.org/10.1109/ICMLA.2017.0-134)
+
+.. image:: https://zenodo.org/badge/doi/10.5281/zenodo.40565.svg
+    :target: http://dx.doi.org/10.5281/zenodo.40565
+    :alt: 0.5.1
 
 # HDLTex: [Hierarchical Deep Learning for Text Classification](https://arxiv.org/abs/1709.08267)
 
