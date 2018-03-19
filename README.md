@@ -8,24 +8,45 @@ DOI: [10.1109/ICMLA.2017.0-134](https://doi.org/10.1109/ICMLA.2017.0-134)
 
 
 
+## Installation ##
 
+There are git RMDL in this repository; to clone all the needed files, please use:
+
+    git clone --recursive https://github.com/kk7nc/HDLTex.git
+     
+     
+The primary requirements for this package are Python 3 with Tensorflow. The requirements.txt file contains a listing of the required Python packages; to install all requirements, run the following:
+    
+    pip -r install requirements.txt
+    
+Or
+
+    pip3  install -r requirements.txt
+
+Or:
+
+    conda install --file requirements.txt
+        
+If the above command does not work, use the following:
+
+    sudo -H pip  install -r requirements.txt
 
 **Documentation:**
 
 **Datasets for HDLTex:** 
 
-Linke of dataset: [http://dx.doi.org/10.17632/9rw3vkcfy4.2](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
+Linke of dataset: [DOI: 10.17632/9rw3vkcfy4.2](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
 
 
-Web of Science Dataset [WOS-11967](https://github.com/kk7nc/HDLTex/tree/master/DATA)
+Web of Science Dataset [WOS-11967](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
 
         This dataset contains 11,967 documents with 35 categories which include 7 parents categories.
         
-Web of Science Dataset [WOS-46985](https://github.com/kk7nc/HDLTex/tree/master/DATA)
+Web of Science Dataset [WOS-46985](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
 
         This dataset contains 46,985 documents with 134 categories which include 7 parents categories.
       
-Web of Science Dataset [WOS-5736](https://github.com/kk7nc/HDLTex/tree/master/DATA)
+Web of Science Dataset [WOS-5736](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
 
         This dataset contains 5,736 documents with 11 categories which include 3 parents categories.
 
