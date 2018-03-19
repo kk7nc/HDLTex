@@ -8,7 +8,7 @@ import numpy as np
 import os
 
 
-GLOVE_DIR = "D:/glove/"
+GLOVE_DIR = "./GloVe/"
 
 
 def clean_str(string):
