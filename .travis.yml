@@ -53,7 +53,6 @@ install:
       conda install Pillow;
     fi
 
-  - pip install -e .[tests]
 
   # install TensorFlow (CPU version).
   - pip install tensorflow
@@ -85,31 +84,8 @@ install:
   - export APP_CHANGED=False;
   - for entry in `git diff --name-only HEAD~1`; do if [[ "$entry" == "keras/applications/"* ]]; then export APP_CHANGED=True; fi; done
 
-  #install open mpi
-  - rm -rf ~/mpi
-  - mkdir ~/mpi
-  - pushd ~/mpi
-  - wget http://cntk.ai/PythonWheel/ForKeras/depends/openmpi_1.10-3.zip
-  - unzip ./openmpi_1.10-3.zip
-  - sudo dpkg -i openmpi_1.10-3.deb
-  - popd
+
 
 # command to run tests
 script:
-  - export MKL_THREADING_LAYER="GNU"
-  # run keras backend init to initialize backend config
-  - python -c "import keras.backend"
-  # create dataset directory to avoid concurrent directory creation at runtime
-  - mkdir ~/.keras/datasets
-  # set up keras backend
-  - sed -i -e 's/"backend":[[:space:]]*"[^"]*/"backend":\ "'$KERAS_BACKEND'/g' ~/.keras/keras.json;
-  - echo -e "Running tests with the following config:\n$(cat ~/.keras/keras.json)"
-  - if [[ "$TEST_MODE" == "INTEGRATION_TESTS" ]]; then
-      PYTHONPATH=$PWD:$PYTHONPATH py.test tests/integration_tests;
-    elif [[ "$TEST_MODE" == "PEP8" ]]; then
-      PYTHONPATH=$PWD:$PYTHONPATH py.test --pep8 -m pep8 -n0;
-    elif [[ "$TEST_MODE" == "DOC" ]]; then
-      PYTHONPATH=$PWD:$PYTHONPATH py.test HDLTex.py;
-    else
-      PYTHONPATH=$PWD:$PYTHONPATH py.test HDLTex.py;
-    fi
+  python HDLTex.py;
