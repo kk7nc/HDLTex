@@ -2,7 +2,6 @@ before_install: pip install tensorflow
 cache: pip
 deploy:
   on:
-    distributions: sdist bdist_wheel
     repo: kk7nc/HDLTex
     tags: true
 dist: trusty
