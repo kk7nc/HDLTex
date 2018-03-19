@@ -4,6 +4,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 import WOS_input as WOS
+import Download_Glove as GloVe
 import numpy as np
 import os
 
@@ -54,6 +55,8 @@ def text_cleaner(text):
 def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
     ''' Location of the dataset'''
     WOS.download_and_extract()
+    GloVe.download_and_extract()
+    
     fname = "Data_WOS/WebOfScience/WOS5736/X.txt"
     fnamek = "Data_WOS/WebOfScience/WOS5736/YL1.txt"
     fnameL2 = "Data_WOS/WebOfScience/WOS5736/YL2.txt"
