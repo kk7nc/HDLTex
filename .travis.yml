@@ -57,6 +57,8 @@ install:
   # install TensorFlow (CPU version).
   - pip install tensorflow
   
+  pip3  install -r requirements.txt
+  
   # install cntk
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
       pip install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.3.1-cp27-cp27mu-linux_x86_64.whl;
