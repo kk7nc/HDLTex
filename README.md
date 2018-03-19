@@ -1,4 +1,4 @@
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/kk7nc/HDLTex/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592104)](https://github.com/kk7nc/HDLTex/blob/master/LICENSE)
 [![license](http://kowsari.net/HDLTex_DOI.svg?maxAge=2592000)](https://doi.org/10.1109/ICMLA.2017.0-134)
 
 
