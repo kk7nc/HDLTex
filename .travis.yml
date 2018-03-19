@@ -1,0 +1,12 @@
+before_install: pip install tensorflow
+cache: pip
+deploy:
+  on:
+    repo: kk7nc/HDLTex
+    tags: true
+dist: trusty
+env:
+  - KERAS_BACKEND=tensorflow
+install: pip install --editable .
+language: python
+script: pytest
