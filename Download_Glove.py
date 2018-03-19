@@ -2,6 +2,7 @@ from __future__ import print_function
 
 import os, sys, tarfile
 import numpy as np
+import zipfile
 
 if sys.version_info >= (3, 0, 0):
     import urllib.request as urllib  # ugly but works
@@ -43,6 +44,8 @@ def download_and_extract():
             sys.stdout.flush()
 
         filepath, _ = urllib.urlretrieve(DATA_URL, filepath, reporthook=_progress)
-        print('Downloaded', filename)
 
-        tarfile.open(filepath, 'r').extractall(dest_directory)
+
+        zip_ref = zipfile.ZipFile(filepath, 'r')
+        zip_ref.extractall(DATA_DIR)
+        zip_ref.close()
