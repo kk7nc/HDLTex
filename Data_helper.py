@@ -7,8 +7,8 @@ import WOS_input as WOS
 import numpy as np
 import os
 
-GLOVE_DIR = "D:/glove/"
 
+GLOVE_DIR = "D:/glove/"
 
 
 def clean_str(string):
@@ -57,8 +57,7 @@ def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
     fname = "Data_WOS/WebOfScience/WOS5736/X.txt"
     fnamek = "Data_WOS/WebOfScience/WOS5736/YL1.txt"
     fnameL2 = "Data_WOS/WebOfScience/WOS5736/YL2.txt"
-    GLOVE_DIR = "D:/glove/" # location of Glove dirctory you can download it from
-    # https://nlp.stanford.edu/projects/glove/
+
     with open(fname) as f:
         content = f.readlines()
         content = [clean_str(x) for x in content]
@@ -209,5 +208,4 @@ def loadData():
         L2_Test[i] = np.array(L2_Test[i])
         content_L2_Train[i] = np.array(content_L2_Train[i])
         content_L2_Test[i] = np.array(content_L2_Test[i])
-
     return (X_train,y_train,X_test,y_test,content_L2_Train,L2_Train,content_L2_Test,L2_Test,number_of_classes_L2)

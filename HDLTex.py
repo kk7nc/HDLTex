@@ -15,8 +15,8 @@ if __name__ == "__main__":
     MAX_SEQUENCE_LENGTH = 500 # Maximum sequance lenght 500 words
     MAX_NB_WORDS = 55000 # Maximum number of unique words
     EMBEDDING_DIM = 100 #embedding dimension you can change it to {25, 100, 150, and 300} but need to change glove version
-    batch_size_L1 = 256 # batch size in Level 1
-    batch_size_L2 = 256 # batch size in Level 2
+    batch_size_L1 = 64 # batch size in Level 1
+    batch_size_L2 = 64 # batch size in Level 2
 
     L1_model =0 # 0 is DNN, 1 is CNN, and 2 is RNN for Level 1
     L2_model =2 # 0 is DNN, 1 is CNN, and 2 is RNN for Level 2

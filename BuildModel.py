@@ -53,7 +53,6 @@ def buildModel_RNN(word_index, embeddings_index, nClasses, MAX_SEQUENCE_LENGTH, 
                   optimizer='rmsprop',
                   metrics=['acc'])
     return model
-
 '''
 def buildModel_CNN(word_index,embeddings_index,nClasses,MAX_SEQUENCE_LENGTH,EMBEDDING_DIM,Complexity=0):
 word_index in word index , 
