@@ -1,10 +1,11 @@
 import os
+os.environ['KERAS_BACKEND'] = 'tensorflow'
 os.environ["THEANO_FLAGS"] = "mode=FAST_RUN"
+
 import numpy as np
 from keras.models import Sequential
 import Data_helper
 import BuildModel
-os.environ['THEANO_FLAGS'] = "device=gpu1"
 
 if __name__ == "__main__":
 
