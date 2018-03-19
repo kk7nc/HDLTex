@@ -1,10 +1,11 @@
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/kk7nc/HDLTex/blob/master/LICENSE)
+[![license](http://kowsari.net/HDLTex_DOI.svg?maxAge=2592000)](https://doi.org/10.1109/ICMLA.2017.0-134)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592104)](https://github.com/kk7nc/HDLTex/blob/master/LICENSE)
+
+
 
 # HDLTex: [Hierarchical Deep Learning for Text Classification](https://arxiv.org/abs/1709.08267)
 
 Refrenced paper : [HDLTex: Hierarchical Deep Learning for Text Classification](https://arxiv.org/abs/1709.08267)
-
-DOI: [10.1109/ICMLA.2017.0-134](https://doi.org/10.1109/ICMLA.2017.0-134)
 
 ![picture](http://kowsari.net/____impro/1/onewebmedia/HDLTex.png?etag=W%2F%22c90cd-59c4019b%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=821%2B326&extract=0%2B0%2B821%2B325?raw=false "HDLTex as both Hierarchy lavel are DNN")
 
