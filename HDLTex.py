@@ -1,6 +1,6 @@
 import os
 os.environ['KERAS_BACKEND'] = 'tensorflow'
-os.environ["THEANO_FLAGS"] = "mode=FAST_RUN"
+#os.environ["THEANO_FLAGS"] = "mode=FAST_RUN"
 
 import numpy as np
 from keras.models import Sequential
@@ -9,8 +9,8 @@ import BuildModel
 
 if __name__ == "__main__":
 
-    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-    os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+    #os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+    #os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 
     MEMORY_MB_MAX = 1600000 # maximum memory you can use
     MAX_SEQUENCE_LENGTH = 500 # Maximum sequance lenght 500 words
