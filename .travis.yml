@@ -5,4 +5,4 @@ install:
   - pip install -r requirements/test.txt
 cache: pip
 
-script: HDLTex
+script: HDLTex.py
