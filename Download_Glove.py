@@ -36,7 +36,7 @@ def download_and_extract():
     filepath = os.path.join(dest_directory, filename)
     print(filepath)
 
-
+    path = os.path.abspath(dest_directory)
     if not os.path.exists(filepath):
         def _progress(count, block_size, total_size):
             sys.stdout.write('\rDownloading %s %.2f%%' % (filename,
@@ -49,3 +49,4 @@ def download_and_extract():
         zip_ref = zipfile.ZipFile(filepath, 'r')
         zip_ref.extractall(DATA_DIR)
         zip_ref.close()
+    return path

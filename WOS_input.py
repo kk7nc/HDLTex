@@ -33,9 +33,9 @@ def download_and_extract():
         os.makedirs(dest_directory)
     filename = DATA_URL.split('/')[-1]
     filepath = os.path.join(dest_directory, filename)
-    print(filepath)
 
 
+    path = os.path.abspath(dest_directory)
     if not os.path.exists(filepath):
         def _progress(count, block_size, total_size):
             sys.stdout.write('\rDownloading %s %.2f%%' % (filename,
@@ -43,7 +43,8 @@ def download_and_extract():
             sys.stdout.flush()
 
         filepath, _ = urllib.urlretrieve(DATA_URL, filepath)#, reporthook=_progress)
+
         print('Downloaded', filename)
 
         tarfile.open(filepath, 'r').extractall(dest_directory)
-
+    return path

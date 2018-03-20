@@ -96,7 +96,7 @@ if __name__ == "__main__":
             HDLTex[i] = BuildModel.buildModel_RNN(word_index, embeddings_index,number_of_classes_L2[i],MAX_SEQUENCE_LENGTH,EMBEDDING_DIM)
             HDLTex[i].fit(content_L2_Train[i], L2_Train[i],
                           validation_data=(content_L2_Test[i], L2_Test[i]),
-                          epochs=epochs,
+                          epochs=100,
                           verbose=2,
                           batch_size=batch_size_L2)
 

@@ -9,8 +9,10 @@ import numpy as np
 import os
 
 
-GLOVE_DIR = "./GloVe/"
-
+''' Location of the dataset'''
+path_WOS = WOS.download_and_extract()
+GLOVE_DIR = GloVe.download_and_extract()
+print(GLOVE_DIR)
 
 def clean_str(string):
     """
@@ -53,13 +55,11 @@ def text_cleaner(text):
 
 
 def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
-    ''' Location of the dataset'''
-    WOS.download_and_extract()
-    GloVe.download_and_extract()
+
     
-    fname = ".\Data_WOS\WebOfScience\WOS5736\X.txt"
-    fnamek = ".\Data_WOS\WebOfScience\WOS5736\YL1.txt"
-    fnameL2 = ".\Data_WOS\WebOfScience\WOS5736\YL2.txt"
+    fname = path_WOS+"\WebOfScience\WOS5736\X.txt"
+    fnamek = path_WOS+"\WebOfScience\WOS5736\YL1.txt"
+    fnameL2 = path_WOS+"\WebOfScience\WOS5736\YL2.txt"
 
     with open(fname) as f:
         content = f.readlines()
@@ -135,7 +135,9 @@ def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
     '''
     For CNN and RNN, we used the text vector-space models using $100$ dimensions as described in Glove. A vector-space model is a mathematical mapping of the word space
     '''
-    f = open(os.path.join(GLOVE_DIR, 'glove.6B.100d.txt'), encoding="utf8")
+    Glove_path = os.path.join(GLOVE_DIR, 'glove.6B.100d.txt')
+    print(Glove_path)
+    f = open(Glove_path, encoding="utf8")
     for line in f:
         values = line.split()
         word = values[0]
@@ -154,9 +156,9 @@ def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
 
 def loadData():
     WOS.download_and_extract()
-    fname = "Data_WOS/WebOfScience/WOS5736/X.txt"
-    fnamek = "Data_WOS/WebOfScience/WOS5736/YL1.txt"
-    fnameL2 = "Data_WOS/WebOfScience/WOS5736/YL2.txt"
+    fname = path_WOS+"/WebOfScience/WOS5736/X.txt"
+    fnamek = path_WOS+"/WebOfScience/WOS5736/YL1.txt"
+    fnameL2 = path_WOS+"/WebOfScience/WOS5736/YL2.txt"
     with open(fname) as f:
         content = f.readlines()
         content = [text_cleaner(x) for x in content]
