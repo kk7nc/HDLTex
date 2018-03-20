@@ -57,9 +57,9 @@ def text_cleaner(text):
 def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
 
     
-    fname = path_WOS+"/WebOfScience/WOS5736/X.txt"
-    fnamek = path_WOS+"/WebOfScience/WOS5736/YL1.txt"
-    fnameL2 = path_WOS+"/WebOfScience/WOS5736/YL2.txt"
+    fname = os.path.join(path_WOS,"WebOfScience/WOS5736/X.txt")
+    fnamek = os.path.join(path_WOS,"WebOfScience/WOS5736/YL1.txt")
+    fnameL2 = os.path.join(path_WOS,"WebOfScience/WOS5736/YL2.txt")
 
     with open(fname) as f:
         content = f.readlines()
@@ -156,9 +156,9 @@ def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
 
 def loadData():
     WOS.download_and_extract()
-    fname = path_WOS+"/WebOfScience/WOS5736/X.txt"
-    fnamek = path_WOS+"/WebOfScience/WOS5736/YL1.txt"
-    fnameL2 = path_WOS+"/WebOfScience/WOS5736/YL2.txt"
+    fname = os.path.join(path_WOS,"WebOfScience/WOS5736/X.txt")
+    fnamek = os.path.join(path_WOS,"WebOfScience/WOS5736/YL1.txt")
+    fnameL2 = os.path.join(path_WOS,"WebOfScience/WOS5736/YL2.txt")
     with open(fname) as f:
         content = f.readlines()
         content = [text_cleaner(x) for x in content]
