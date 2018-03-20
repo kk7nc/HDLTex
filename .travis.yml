@@ -32,7 +32,7 @@ install:
 
   # install TensorFlow (CPU version).
   - pip install tensorflow
-  
+  - pip install scikit-learn
   - pip  install keras
   
   # install pydot for visualization tests
