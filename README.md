@@ -105,12 +105,12 @@ Send an email to [kk7nc@virginia.edu](mailto:kk7nc@virginia.edu)
 
 ## Citations ##
 
-        @inproceedings{Kowsari2018HDLTex, 
-        author={K. Kowsari and D. E. Brown and M. Heidarysafa and K. Jafari Meimandi and M. S. Gerber and L. E. Barnes}, 
-        booktitle={2017 16th IEEE International Conference on Machine Learning and Applications (ICMLA)}, 
-        title={HDLTex: Hierarchical Deep Learning for Text Classification}, 
-        year={2017},  
-        pages={364-371}, 
-        doi={10.1109/ICMLA.2017.0-134},  
-        month={Dec}
-        }
+    @inproceedings{Kowsari2018HDLTex, 
+    author={K. Kowsari and D. E. Brown and M. Heidarysafa and K. Jafari Meimandi and M. S. Gerber and L. E. Barnes}, 
+    booktitle={2017 16th IEEE International Conference on Machine Learning and Applications (ICMLA)}, 
+    title={HDLTex: Hierarchical Deep Learning for Text Classification}, 
+    year={2017},  
+    pages={364-371}, 
+    doi={10.1109/ICMLA.2017.0-134},  
+    month={Dec}
+    }
