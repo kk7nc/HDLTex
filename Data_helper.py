@@ -57,9 +57,9 @@ def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
     WOS.download_and_extract()
     GloVe.download_and_extract()
     
-    fname = "Data_WOS/WebOfScience/WOS5736/X.txt"
-    fnamek = "Data_WOS/WebOfScience/WOS5736/YL1.txt"
-    fnameL2 = "Data_WOS/WebOfScience/WOS5736/YL2.txt"
+    fname = ".\Data_WOS\WebOfScience\WOS5736\X.txt"
+    fnamek = ".\Data_WOS\WebOfScience\WOS5736\YL1.txt"
+    fnameL2 = ".\Data_WOS\WebOfScience\WOS5736\YL2.txt"
 
     with open(fname) as f:
         content = f.readlines()
