@@ -18,6 +18,7 @@ if __name__ == "__main__":
     EMBEDDING_DIM = 100 #embedding dimension you can change it to {25, 100, 150, and 300} but need to change glove version
     batch_size_L1 = 64 # batch size in Level 1
     batch_size_L2 = 64 # batch size in Level 2
+    epochs = 1
 
     L1_model =0 # 0 is DNN, 1 is CNN, and 2 is RNN for Level 1
     L2_model =2 # 0 is DNN, 1 is CNN, and 2 is RNN for Level 2
@@ -41,6 +42,7 @@ if __name__ == "__main__":
         model.fit(X_train_DNN, y_train_DNN[:, 0],
                   validation_data=(X_test_DNN, y_test_DNN[:, 0]),
                   epochs=1,
+                  verbose=2,
                   batch_size=batch_size_L1)
 
     #######################CNN Level 1########################
@@ -49,7 +51,8 @@ if __name__ == "__main__":
         model = BuildModel.buildModel_CNN(word_index, embeddings_index,number_of_classes_L1,MAX_SEQUENCE_LENGTH,EMBEDDING_DIM,1)
         model.fit(X_train, y_train[:,0],
                   validation_data=(X_test, y_test[:,0]),
-                  epochs=1,
+                  epochs=epochs,
+                  verbose=2,
                   batch_size=batch_size_L1)
     #######################RNN Level 1########################
     if L1_model == 2:
@@ -57,7 +60,8 @@ if __name__ == "__main__":
         model = BuildModel.buildModel_RNN(word_index, embeddings_index,number_of_classes_L1,MAX_SEQUENCE_LENGTH,EMBEDDING_DIM)
         model.fit(X_train, y_train[:,0],
                   validation_data=(X_test, y_test[:,0]),
-                  epochs=100,
+                  epochs=epochs,
+                  verbose=2,
                   batch_size=batch_size_L1)
 
     HDLTex = [] # Level 2 models is list of Deep Structure
@@ -69,7 +73,8 @@ if __name__ == "__main__":
             HDLTex[i] = BuildModel.buildModel_DNN(content_L2_Train_DNN[i].shape[1], number_of_classes_L2_DNN[i],2, 1024, dropout=0.5)
             HDLTex[i].fit(content_L2_Train_DNN[i], L2_Train_DNN[i],
                       validation_data=(content_L2_Test_DNN[i], L2_Test_DNN[i]),
-                      epochs=100,
+                      epochs=epochs,
+                      verbose=2,
                       batch_size=batch_size_L2)
     ######################CNN Level 2################################
     if L2_model == 1:
@@ -80,7 +85,8 @@ if __name__ == "__main__":
             HDLTex[i] = BuildModel.buildModel_CNN(word_index, embeddings_index,number_of_classes_L2[i],MAX_SEQUENCE_LENGTH,EMBEDDING_DIM,1)
             HDLTex[i].fit(content_L2_Train[i], L2_Train[i],
                           validation_data=(content_L2_Test[i], L2_Test[i]),
-                          epochs=100,
+                          epochs=epochs,
+                          verbose=2,
                           batch_size=batch_size_L2)
     ######################RNN Level 2################################
     if L2_model == 2:
@@ -90,7 +96,8 @@ if __name__ == "__main__":
             HDLTex[i] = BuildModel.buildModel_RNN(word_index, embeddings_index,number_of_classes_L2[i],MAX_SEQUENCE_LENGTH,EMBEDDING_DIM)
             HDLTex[i].fit(content_L2_Train[i], L2_Train[i],
                           validation_data=(content_L2_Test[i], L2_Test[i]),
-                          epochs=100,
+                          epochs=epochs,
+                          verbose=2,
                           batch_size=batch_size_L2)
 
 
