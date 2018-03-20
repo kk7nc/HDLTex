@@ -41,7 +41,7 @@ if __name__ == "__main__":
         model = BuildModel.buildModel_DNN(X_train_DNN.shape[1], number_of_classes_L1, 8, 64, dropout=0.25)
         model.fit(X_train_DNN, y_train_DNN[:, 0],
                   validation_data=(X_test_DNN, y_test_DNN[:, 0]),
-                  epochs=1,
+                  epochs=epochs,
                   verbose=2,
                   batch_size=batch_size_L1)
 
@@ -96,7 +96,7 @@ if __name__ == "__main__":
             HDLTex[i] = BuildModel.buildModel_RNN(word_index, embeddings_index,number_of_classes_L2[i],MAX_SEQUENCE_LENGTH,EMBEDDING_DIM)
             HDLTex[i].fit(content_L2_Train[i], L2_Train[i],
                           validation_data=(content_L2_Test[i], L2_Test[i]),
-                          epochs=100,
+                          epochs=epochs,
                           verbose=2,
                           batch_size=batch_size_L2)
 
