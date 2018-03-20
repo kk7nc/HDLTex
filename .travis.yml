@@ -5,8 +5,6 @@ matrix:
     include:
         - python: 3.6
           env: KERAS_BACKEND=tensorflow TEST_MODE=DOC
-        - python: 2.7
-          env: KERAS_BACKEND=tensorflow
         - python: 3.6
           env: KERAS_BACKEND=tensorflow
         - python: 3.6
