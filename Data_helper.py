@@ -57,9 +57,9 @@ def text_cleaner(text):
 def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
 
     
-    fname = path_WOS+"\WebOfScience\WOS5736\X.txt"
-    fnamek = path_WOS+"\WebOfScience\WOS5736\YL1.txt"
-    fnameL2 = path_WOS+"\WebOfScience\WOS5736\YL2.txt"
+    fname = path_WOS+"/WebOfScience/WOS5736/X.txt"
+    fnamek = path_WOS+"/WebOfScience/WOS5736/YL1.txt"
+    fnameL2 = path_WOS+"/WebOfScience/WOS5736/YL2.txt"
 
     with open(fname) as f:
         content = f.readlines()
