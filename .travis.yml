@@ -7,6 +7,8 @@ matrix:
           env: KERAS_BACKEND=tensorflow TEST_MODE=DOC
         - python: 3.6
           env: KERAS_BACKEND=tensorflow
+        - "3.5-dev"  # 3.5 development branch
+          env: KERAS_BACKEND=tensorflow
         - python: 3.6
           env: KERAS_BACKEND=theano THEANO_FLAGS=optimizer=fast_compile
         - python: 3.6
