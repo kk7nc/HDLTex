@@ -87,9 +87,10 @@ The libcupti-dev library,
 
 To install this library, issue the following command:
 
-```
-$ sudo apt-get install libcupti-dev
-```
+
+        $ sudo apt-get install libcupti-dev
+
+
 **Feature Extraction:**
 
 Global Vectors for Word Representation ([GLOVE](https://nlp.stanford.edu/projects/glove/))
