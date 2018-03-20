@@ -3,30 +3,14 @@ dist: trusty
 language: python
 matrix:
     include:
-        - python: 2.7
-          env: KERAS_BACKEND=tensorflow TEST_MODE=PEP8
-        - python: 2.7
-          env: KERAS_BACKEND=tensorflow TEST_MODE=INTEGRATION_TESTS
         - python: 3.6
           env: KERAS_BACKEND=tensorflow TEST_MODE=DOC
-        - python: 2.7
-          env: KERAS_BACKEND=tensorflow
-        - python: 3.6
-          env: KERAS_BACKEND=tensorflow
-        - python: 2.7
-          env: KERAS_BACKEND=theano THEANO_FLAGS=optimizer=fast_compile
-        - python: 3.6
-          env: KERAS_BACKEND=theano THEANO_FLAGS=optimizer=fast_compile
-        - python: 2.7
-          env: KERAS_BACKEND=cntk PYTHONWARNINGS=ignore
-        - python: 3.6
-          env: KERAS_BACKEND=cntk PYTHONWARNINGS=ignore
 install:
   # code below is taken from http://conda.pydata.org/docs/travis.html
   # We do this conditionally because it saves us some downloading if the
   # version is the same.
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
-      wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh;
+      wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
     else
       wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
     fi
@@ -46,70 +30,14 @@ install:
   # set library path
   - export LD_LIBRARY_PATH=$HOME/miniconda/envs/test-environment/lib/:$LD_LIBRARY_PATH
 
-  # install PIL for preprocessing tests
-  - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
-      conda install pil;
-    elif [[ "$TRAVIS_PYTHON_VERSION" == "3.6" ]]; then
-      conda install Pillow;
-    fi
-
-  - pip install -e .[tests]
-
   # install TensorFlow (CPU version).
   - pip install tensorflow
+  - pip install scikit-learn
+  - pip  install keras
   
-  # install cntk
-  - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
-      pip install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.3.1-cp27-cp27mu-linux_x86_64.whl;
-    elif [[ "$TRAVIS_PYTHON_VERSION" == "3.6" ]]; then
-      pip install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.3.1-cp36-cp36m-linux_x86_64.whl;
-    fi
-
   # install pydot for visualization tests
   - conda install pydot graphviz
 
-  # exclude different backends to measure a coverage for the designated backend only
-  - if [[ "$KERAS_BACKEND" != "tensorflow" ]]; then
-      echo '    keras/backend/tensorflow_backend.py' >> .coveragerc;
-    fi
-  - if [[ "$KERAS_BACKEND" != "theano" ]]; then
-      echo '    keras/backend/theano_backend.py' >> .coveragerc;
-    fi
-  - if [[ "$KERAS_BACKEND" != "cntk" ]]; then
-      echo '    keras/backend/cntk_backend.py' >> .coveragerc;
-    fi
-
-  # detect whether core files are changed or not
-  - export CORE_CHANGED=False;
-  - for entry in `git diff --name-only HEAD~1`; do if [[ "$entry" == "keras/backend/"* ]] || [[ "$entry" == "keras/engine/"* ]] || [[ "$entry" == "keras/layers/"* ]]; then export CORE_CHANGED=True; fi; done
-  - export APP_CHANGED=False;
-  - for entry in `git diff --name-only HEAD~1`; do if [[ "$entry" == "keras/applications/"* ]]; then export APP_CHANGED=True; fi; done
-
-  #install open mpi
-  - rm -rf ~/mpi
-  - mkdir ~/mpi
-  - pushd ~/mpi
-  - wget http://cntk.ai/PythonWheel/ForKeras/depends/openmpi_1.10-3.zip
-  - unzip ./openmpi_1.10-3.zip
-  - sudo dpkg -i openmpi_1.10-3.deb
-  - popd
-
 # command to run tests
 script:
-  - export MKL_THREADING_LAYER="GNU"
-  # run keras backend init to initialize backend config
-  - python -c "import keras.backend"
-  # create dataset directory to avoid concurrent directory creation at runtime
-  - mkdir ~/.keras/datasets
-  # set up keras backend
-  - sed -i -e 's/"backend":[[:space:]]*"[^"]*/"backend":\ "'$KERAS_BACKEND'/g' ~/.keras/keras.json;
-  - echo -e "Running tests with the following config:\n$(cat ~/.keras/keras.json)"
-  - if [[ "$TEST_MODE" == "INTEGRATION_TESTS" ]]; then
-      PYTHONPATH=$PWD:$PYTHONPATH py.test tests/integration_tests;
-    elif [[ "$TEST_MODE" == "PEP8" ]]; then
-      PYTHONPATH=$PWD:$PYTHONPATH py.test --pep8 -m pep8 -n0;
-    elif [[ "$TEST_MODE" == "DOC" ]]; then
-      PYTHONPATH=$PWD:$PYTHONPATH py.test tests/test_documentation.py;
-    else
-      PYTHONPATH=$PWD:$PYTHONPATH py.test tests/ --ignore=tests/integration_tests --ignore=tests/test_documentation.py --ignore=tests/keras/legacy/layers_test.py --cov-config .coveragerc --cov=keras tests/;
-    fi
+  python HDLTex.py;
