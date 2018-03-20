@@ -103,7 +103,7 @@ Global Vectors for Word Representation ([GLOVE](https://nlp.stanford.edu/project
 Send an email to [kk7nc@virginia.edu](mailto:kk7nc@virginia.edu)
 
 
-## Citations ##
+## Citation: ##
 
     @inproceedings{Kowsari2018HDLTex, 
     author={K. Kowsari and D. E. Brown and M. Heidarysafa and K. Jafari Meimandi and M. S. Gerber and L. E. Barnes}, 
