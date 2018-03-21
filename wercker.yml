@@ -6,7 +6,7 @@
 # If you want Google's container you would reference google/python
 # Read more about containers on our dev center
 # http://devcenter.wercker.com/docs/containers/index.html
-box: python:3.6
+box: python:2.7
 # You can also use services such as databases. Read more on our dev center:
 # http://devcenter.wercker.com/docs/services/index.html
 # services:
@@ -36,7 +36,7 @@ build:
     #     python_location: /usr/bin/python3.2
 
     # A step that executes `pip install` command.
-    - pip install -r requirements.txt
+    - pip-install
 
     # # This pip-install clears the local wheel cache
     # - pip-install:
