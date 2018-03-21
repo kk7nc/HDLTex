@@ -1,5 +1,6 @@
 [![license](http://kowsari.net/HDLTex_DOI.svg?maxAge=2592000)](https://doi.org/10.1109/ICMLA.2017.0-134)
 [![license](https://travis-ci.org/kk7nc/HDLTex.svg?branch=master)](https://travis-ci.org/kk7nc/HDLTex)
+[![wercker status](https://app.wercker.com/status/24a123448ba8764b257a1df242146b8e/s/master "wercker status")](https://app.wercker.com/project/byKey/24a123448ba8764b257a1df242146b8e)
 [![license](https://img.shields.io/badge/arXiv-1709.08267-red.svg?style=flat)](https://arxiv.org/abs/1709.08267)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592104)](https://github.com/kk7nc/HDLTex/blob/master/LICENSE)
 
