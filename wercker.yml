@@ -1,5 +1,5 @@
 # This references the default Python container from
-# the Docker Hub with the 2.7 tag:
+# the Docker Hub with the 3.6 tag:
 # https://registry.hub.docker.com/_/python/
 # If you want to use a slim Python container with
 # version 3.4.3 you would use: python:3.4-slim
