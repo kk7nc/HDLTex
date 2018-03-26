@@ -45,7 +45,7 @@ If the above command does not work, use the following:
 
 **Datasets for HDLTex:** 
 
-Linke of dataset: [DOI: 10.17632/9rw3vkcfy4.6](http://dx.doi.org/10.17632/9rw3vkcfy4.6)
+Linke of dataset: [![license](https://img.shields.io/badge/DOI-10.17632/9rw3vkcfy4.6-blue.svg?style=flat)](http://dx.doi.org/10.17632/9rw3vkcfy4.6)
 
 
 Web of Science Dataset [WOS-11967](http://dx.doi.org/10.17632/9rw3vkcfy4.2)
