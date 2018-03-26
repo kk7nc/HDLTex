@@ -3,6 +3,7 @@
 [![wercker status](https://app.wercker.com/status/24a123448ba8764b257a1df242146b8e/s/master "wercker status")](https://app.wercker.com/project/byKey/24a123448ba8764b257a1df242146b8e)
 [![Join the chat at https://gitter.im/HDLTex](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/HDLTex/Lobby?source=orgpage)
 [![license](https://img.shields.io/badge/arXiv-1709.08267-red.svg?style=flat)](https://arxiv.org/abs/1709.08267)
+[![license](https://img.shields.io/badge/ResearchGate-HDLTex-blue.svg?style=flat)](https://www.researchgate.net/publication/319968747_HDLTex_Hierarchical_Deep_Learning_for_Text_Classification)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592104)](https://github.com/kk7nc/HDLTex/blob/master/LICENSE)
 
 
