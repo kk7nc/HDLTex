@@ -21,7 +21,7 @@ Refrenced paper : [HDLTex: Hierarchical Deep Learning for Text Classification](h
 
 ## Installation ##
 
-There are git RMDL in this repository; to clone all the needed files, please use:
+There are git HDLTex in this repository; to clone all the needed files, please use:
 
     git clone --recursive https://github.com/kk7nc/HDLTex.git
      
