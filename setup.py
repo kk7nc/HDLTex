@@ -10,7 +10,6 @@ with open('requirements.txt') as f:
 setup(
     name='HDLTex',
     version='1.0.1',
-    packages=[''],
     url='https://github.com/kk7nc/HDLTex',
     license='MIT',
     author='Kamran Kowsari',
