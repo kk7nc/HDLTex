@@ -1,5 +1,5 @@
 |DOI| |travis| |wercker status| |Join the chat at
-https://gitter.im/HDLTex| |license| |license| |Binder| |license|
+https://gitter.im/HDLTex| |arXiv| |RG| |Binder| |license|
 
 HDLTex: Hierarchical Deep Learning for Text Classification
 ==========================================================
