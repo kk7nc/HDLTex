@@ -37,6 +37,7 @@ packages; to install all requirements, run the following:
 Or
 
 .. code:: bash
+
     pip3  install -r requirements.txt
 
 Or:
