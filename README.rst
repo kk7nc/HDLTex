@@ -18,36 +18,37 @@ Installation
 There are git HDLTex in this repository; to clone all the needed files,
 please use:
 
-::
+Using pip
+~~~~~~~~~
+
+.. code:: bash
 
     git clone --recursive https://github.com/kk7nc/HDLTex.git
-     
-     
+
 
 The primary requirements for this package are Python 3 with Tensorflow.
 The requirements.txt file contains a listing of the required Python
 packages; to install all requirements, run the following:
 
-::
+.. code:: bash
 
     pip -r install requirements.txt
 
 Or
 
-::
-
+.. code:: bash
     pip3  install -r requirements.txt
 
 Or:
 
-::
+.. code:: bash
 
     conda install --file requirements.txt
         
 
 If the above command does not work, use the following:
 
-::
+.. code:: bash
 
     sudo -H pip  install -r requirements.txt
 
@@ -80,8 +81,8 @@ Web of Science Dataset
 
         This dataset contains 5,736 documents with 11 categories which include 3 parents categories.
 
-**Requirment :**
-
+Requirment :
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 General:
 
 Python 3.5 or later see `Instruction
@@ -137,7 +138,7 @@ Send an email to kk7nc@virginia.edu
 Citation:
 ---------
 
-::
+.. code:: bash
 
     @inproceedings{Kowsari2018HDLTex, 
     author={Kowsari, Kamran and Brown, Donald E and Heidarysafa, Mojtaba and Meimandi, Kiana Jafari and Gerber, Matthew S and Barnes, Laura E},
