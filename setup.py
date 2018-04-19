@@ -8,15 +8,13 @@ from setuptools import setup, find_packages
 
 __author__ = 'Kamran Kowsari <kowsari.net>'
 
+from os import path
 
-def readme():
-    with open('README.md') as f:
-        return f.read()
+here = path.abspath(path.dirname(__file__))
 
-
-def readfile(fname):
-    path = os.path.join(os.path.dirname(__file__), fname)
-    return io.open(path, encoding='utf8').read()
+# Get the long description from the README file
+with open(path.join(here, 'README.rst')) as f:
+    long_description = f.read()
 
 
 setup(
