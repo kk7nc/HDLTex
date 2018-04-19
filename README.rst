@@ -1,4 +1,4 @@
-|license| |license| |wercker status| |Join the chat at
+|DOI| |travis| |wercker status| |Join the chat at
 https://gitter.im/HDLTex| |license| |license| |Binder| |license|
 
 HDLTex: Hierarchical Deep Learning for Text Classification
@@ -149,17 +149,17 @@ Citation:
     month={Dec}
     }
 
-.. |license| image:: http://kowsari.net/HDLTex_DOI.svg?maxAge=2592000
+.. |DOI| image:: http://kowsari.net/HDLTex_DOI.svg?maxAge=2592000
    :target: https://doi.org/10.1109/ICMLA.2017.0-134
-.. |license| image:: https://travis-ci.org/kk7nc/HDLTex.svg?branch=master
+.. |travis| image:: https://travis-ci.org/kk7nc/HDLTex.svg?branch=master
    :target: https://travis-ci.org/kk7nc/HDLTex
 .. |wercker status| image:: https://app.wercker.com/status/24a123448ba8764b257a1df242146b8e/s/master
    :target: https://app.wercker.com/project/byKey/24a123448ba8764b257a1df242146b8e
 .. |Join the chat at https://gitter.im/HDLTex| image:: https://badges.gitter.im/Join%20Chat.svg
    :target: https://gitter.im/HDLTex/Lobby?source=orgpage
-.. |license| image:: https://img.shields.io/badge/arXiv-1709.08267-red.svg?style=flat
+.. |arXiv| image:: https://img.shields.io/badge/arXiv-1709.08267-red.svg?style=flat
    :target: https://arxiv.org/abs/1709.08267
-.. |license| image:: https://img.shields.io/badge/ResearchGate-HDLTex-blue.svg?style=flat
+.. |RG| image:: https://img.shields.io/badge/ResearchGate-HDLTex-blue.svg?style=flat
    :target: https://www.researchgate.net/publication/319968747_HDLTex_Hierarchical_Deep_Learning_for_Text_Classification
 .. |Binder| image:: https://mybinder.org/badge.svg
    :target: https://mybinder.org/v2/gh/kk7nc/HDLTex/master
