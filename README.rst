@@ -11,16 +11,17 @@ Classification <https://arxiv.org/abs/1709.08267>`__
 |Pic|
 
 
-
 Installation
 ------------
 
-There are git HDLTex in this repository; to clone all the needed files,
-please use:
-
 Using pip
 ~~~~~~~~~
-
+.. code:: bash
+    
+    pip install HDLTex
+    
+Using git
+~~~~~~~~~
 .. code:: bash
 
     git clone --recursive https://github.com/kk7nc/HDLTex.git
