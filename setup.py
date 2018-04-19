@@ -13,15 +13,17 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'README.rst')) as f:
-    long_description = f.read()
+def readfile(file):
+    with open(path.join(here, file)) as f:
+        long_description = f.read()
+    return long_description
 
 
 setup(
     name='HDLTex',
-    version='1.0.2',
+    version='1.0.4',
     description='HDLTex: Hierarchical Deep Learning for Text Classification',
-    long_description=readfile('README.md'),
+    long_description=readfile('README.rst'),
     classifiers=[
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.5',

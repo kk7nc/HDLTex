@@ -1,5 +1,5 @@
 |DOI| |travis| |wercker status| |Join the chat at
-https://gitter.im/HDLTex| |license| |license| |Binder| |license|
+https://gitter.im/HDLTex| |arXiv| |RG| |Binder| |license|
 
 HDLTex: Hierarchical Deep Learning for Text Classification
 ==========================================================
@@ -7,47 +7,50 @@ HDLTex: Hierarchical Deep Learning for Text Classification
 Refrenced paper : `HDLTex: Hierarchical Deep Learning for Text
 Classification <https://arxiv.org/abs/1709.08267>`__
 
-.. figure:: http://kowsari.net/____impro/1/onewebmedia/HDLTex.png?etag=W%2F%22c90cd-59c4019b%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=821%2B326&extract=0%2B0%2B821%2B325?raw=false
-   :alt: HDLTex as both Hierarchy lavel are DNN
 
-   picture
+|Pic|
+
 
 Installation
 ------------
 
-There are git HDLTex in this repository; to clone all the needed files,
-please use:
-
-::
+Using pip
+~~~~~~~~~
+.. code:: bash
+    
+    pip install HDLTex
+    
+Using git
+~~~~~~~~~
+.. code:: bash
 
     git clone --recursive https://github.com/kk7nc/HDLTex.git
-     
-     
+
 
 The primary requirements for this package are Python 3 with Tensorflow.
 The requirements.txt file contains a listing of the required Python
 packages; to install all requirements, run the following:
 
-::
+.. code:: bash
 
     pip -r install requirements.txt
 
 Or
 
-::
+.. code:: bash
 
     pip3  install -r requirements.txt
 
 Or:
 
-::
+.. code:: bash
 
     conda install --file requirements.txt
         
 
 If the above command does not work, use the following:
 
-::
+.. code:: bash
 
     sudo -H pip  install -r requirements.txt
 
@@ -55,7 +58,7 @@ If the above command does not work, use the following:
 
 **Datasets for HDLTex:**
 
-Linke of dataset: |license|
+Linke of dataset: |Data|
 
 Web of Science Dataset
 `WOS-11967 <http://dx.doi.org/10.17632/9rw3vkcfy4.2>`__
@@ -80,8 +83,8 @@ Web of Science Dataset
 
         This dataset contains 5,736 documents with 11 categories which include 3 parents categories.
 
-**Requirment :**
-
+Requirements :
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 General:
 
 Python 3.5 or later see `Instruction
@@ -137,7 +140,7 @@ Send an email to kk7nc@virginia.edu
 Citation:
 ---------
 
-::
+.. code:: bash
 
     @inproceedings{Kowsari2018HDLTex, 
     author={Kowsari, Kamran and Brown, Donald E and Heidarysafa, Mojtaba and Meimandi, Kiana Jafari and Gerber, Matthew S and Barnes, Laura E},
@@ -165,5 +168,7 @@ Citation:
    :target: https://mybinder.org/v2/gh/kk7nc/HDLTex/master
 .. |license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592104
    :target: https://github.com/kk7nc/HDLTex/blob/master/LICENSE
-.. |license| image:: https://img.shields.io/badge/DOI-10.17632/9rw3vkcfy4.6-blue.svg?style=flat
+.. |Data| image:: https://img.shields.io/badge/DOI-10.17632/9rw3vkcfy4.6-blue.svg?style=flat
    :target: http://dx.doi.org/10.17632/9rw3vkcfy4.6
+.. |Pic| image:: http://kowsari.net/____impro/1/onewebmedia/HDLTex.png?etag=W%2F%22c90cd-59c4019b%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=821%2B326&extract=0%2B0%2B821%2B325?raw=false
+   :alt: HDLTex as both Hierarchy lavel are DNN
