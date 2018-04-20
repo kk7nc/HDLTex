@@ -21,7 +21,7 @@ def readfile(file):
 
 setup(
     name='HDLTex',
-    version='1.0.4',
+    version='1.0.5',
     description='HDLTex: Hierarchical Deep Learning for Text Classification',
     long_description=readfile('README.rst'),
     classifiers=[
@@ -40,14 +40,14 @@ setup(
     author_email='kk7nc@virginia.edu',
     packages=['HDLTex'] + find_packages('HDLTex'),
     install_requires=[
-        'matplotlib==2.1.2',
-        'numpy==1.12.1',
-        'pandas==0.22.0',
+        'matplotlib>=2.1.2',
+        'numpy>=1.12.1',
+        'pandas>=0.22.0',
         'scipy',
         'tensorflow-gpu',
-        'keras==2.0.9',
-        'scikit-learn==0.19.0',
-        'nltk==3.2.4'
+        'keras>=2.0.9',
+        'scikit-learn>=0.19.0',
+        'nltk>=3.2.4'
     ],
     include_package_data=False
 )
