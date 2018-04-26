@@ -51,4 +51,4 @@ matrix:
 
 # command to run tests
 test_script:
-  python HDLTex/HDLTex.py;
+  python HDLTex/HDLTex/HDLTex.py;
