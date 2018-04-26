@@ -48,7 +48,19 @@ matrix:
     - MINICONDA: C:\Miniconda3-x64
     - MINICONDA: C:\Miniconda36-x64
 
+init:
+  - "set PATH=%MINICONDA%;%MINICONDA%\\Scripts;%MINICONDA%\\Library\\bin;%PATH%"
 
+install:
+  - conda config --set always_yes yes --set changeps1 no
+  - conda config --add channels conda-forge
+  - conda update -q conda
+  - conda install pip numpy scipy
+  - "pip install -q pytest"
+  - "pip install -qr requirements.txt"
+  - "pip install ."
+  - "echo done"
+  
 # command to run tests
 test_script:
   pytest
