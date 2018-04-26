@@ -8,44 +8,19 @@ environment:
   matrix:
     # Python 3.5, 64 bit (only working version according to TensorFlow docs)
     - MINICONDA: C:\Miniconda35-x64
-    # Python 2.7
-    - MINICONDA: C:\Miniconda
-    - MINICONDA: C:\Miniconda-x64
-    # Python 3.4
-    - MINICONDA: C:\Miniconda3
-    - MINICONDA: C:\Miniconda3-x64
-    # Python 3.5, 32 bit
-    - MINICONDA: C:\Miniconda35
     # Python 3.6
-    - MINICONDA: C:\Miniconda36
     - MINICONDA: C:\Miniconda36-x64
 
 matrix:
   exclude:
-    # Python 2.7
-    - MINICONDA: C:\Miniconda
-      platform: x64
-    - MINICONDA: C:\Miniconda-x64
-      platform: x86
-    # Python 3.4
-    - MINICONDA: C:\Miniconda3
-      platform: x64
-    - MINICONDA: C:\Miniconda3-x64
-      platform: x86
     # Python 3.5
-    - MINICONDA: C:\Miniconda35
-      platform: x64
     - MINICONDA: C:\Miniconda35-x64
       platform: x86
-    # Python 3.6
-    - MINICONDA: C:\Miniconda36
-      platform: x64
     - MINICONDA: C:\Miniconda36-x64
       platform: x86
   allow_failures:
     - platform: x86
     - MINICONDA: C:\Miniconda-x64
-    - MINICONDA: C:\Miniconda3-x64
     - MINICONDA: C:\Miniconda36-x64
 
 init:
@@ -57,7 +32,7 @@ install:
   - conda config --add channels conda-forge
   - conda update -q conda
   - "python -m pip install --upgrade pip"
-  - "pip3 install --upgrade tensorflow"
+  - "pip install --upgrade tensorflow"
   - "pip install -q pytest"
   - "pip install matplotlib"
   - "pip install numpy"
