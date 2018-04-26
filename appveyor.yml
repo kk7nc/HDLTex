@@ -1,3 +1,13 @@
+# version format
+version: 1.0.{build}
+
+branches:
+  # whitelist
+  only:
+    - master
+    
+skip_tags: true
+
 environment:
   # See README for information on the token
   binstar_token:
@@ -10,7 +20,7 @@ environment:
     CMD_IN_ENV: "cmd /E:ON /V:ON /C .\\continuous-integration\\appveyor\\run_with_env.cmd"
 
   matrix:
-
+  
     - PYTHON: "C:\\Python34_32"
       PYTHON_VERSION: "3.4"
       PYTHON_ARCH: "32"
@@ -24,21 +34,35 @@ environment:
       CONDA_NPY: "18"
       
 install:
-  # this installs the appropriate Miniconda (Py2/Py3, 32/64 bit),
-  # as well as pip, conda-build, and the binstar CLI
-  - powershell .\\continuous-integration\\appveyor\\install.ps1
-  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  # code below is taken from http://conda.pydata.org/docs/travis.html
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update -q conda
+  # Useful for debugging any issues with conda
+  - conda info -a
 
+  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION pytest pandas
+  - source activate test-environment
+  - pip install --only-binary=numpy,scipy numpy nose scipy matplotlib h5py theano
+  - conda install mkl mkl-service
+
+  # set library path
+  - export LD_LIBRARY_PATH=$HOME/miniconda/envs/test-environment/lib/:$LD_LIBRARY_PATH
+
+  # install TensorFlow (CPU version).
+  - pip install tensorflow
+  - pip install scikit-learn
+  - pip  install keras
+  
+  # install pydot for visualization tests
+  - conda install pydot graphviz
+
+# command to run tests
+test_script:
+  python HDLTex.py;
   
 test_script:
   - python HDLTex\HDLTex.py conda-recipe
-
-artifacts:
-  # Archive the generated conda package in the ci.appveyor.com build report.
-  - path: '*.tar.bz2'
-
-on_success:
-  # Upload built binaries to binstar.org. The globbing and handling of the
-  # exit-status code is tricky in cmd.exe or powershell, so we're just using
-  # a python script.
-  - python HDLTex\HDLTex.py
