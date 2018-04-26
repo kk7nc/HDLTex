@@ -2,7 +2,7 @@ matplotlib>=2.1.2
 numpy>=1.12.1
 pandas>=0.22.0
 scipy
-tensorflow>=0.12.1
-keras>=2.0.9
-scikit-learn==0.19.0
+tensorflow
+keras
+scikit-learn
 nltk>=3.2.4
