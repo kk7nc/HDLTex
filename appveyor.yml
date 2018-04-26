@@ -31,7 +31,7 @@ install:
   
   build: false
   
-  test_script:
+test_script:
   - python HDLTex\HDLTex.py conda-recipe
 
 artifacts:
