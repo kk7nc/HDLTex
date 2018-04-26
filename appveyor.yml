@@ -56,7 +56,7 @@ install:
   - conda config --set always_yes yes --set changeps1 no
   - conda config --add channels conda-forge
   - conda update -q conda
-  - conda install pip numpy scipy
+  - conda install pip numpy scipy tensorflow 
   - "pip install -q pytest"
   - "pip install -qr requirements.txt"
   - "pip install ."
