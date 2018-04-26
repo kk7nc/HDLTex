@@ -34,6 +34,7 @@ environment:
       CONDA_NPY: "18"
       
 install:
+  - pip install --upgrade pip
   # install TensorFlow (CPU version).
   - pip install tensorflow
   - pip install scikit-learn
