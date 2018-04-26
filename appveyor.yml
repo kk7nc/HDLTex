@@ -56,10 +56,16 @@ install:
   - conda config --set always_yes yes --set changeps1 no
   - conda config --add channels conda-forge
   - conda update -q conda
-  - conda install pip numpy scipy tensorflow 
+  - conda install pip numpy scipy 
   - "pip install -q pytest"
-  - "pip install -qr requirements.txt"
-  - "pip install ."
+  - "pip install matplotlib"
+  - "pip install numpy"
+  - "pip install pandas"
+  - "pip install scipy"
+  - "pip install scikit-learn"
+  - "pip install nltk"
+  - "pip install --upgrade tensorflow"
+  
   - "echo done"
 # command to run tests
 test_script:
