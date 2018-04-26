@@ -63,4 +63,4 @@ install:
   
 # command to run tests
 test_script:
-  pytest
+  python ./HDLTex/HDLTex.py
