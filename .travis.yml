@@ -42,4 +42,4 @@ install:
 
 # command to run tests
 script:
-  python HDLTex.py;
+  python HDLTex/HDLTex.py;
