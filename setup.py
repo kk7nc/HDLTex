@@ -44,7 +44,7 @@ setup(
         'numpy>=1.12.1',
         'pandas>=0.22.0',
         'scipy',
-        'tensorflow-gpu',
+        'tensorflow',
         'keras>=2.0.9',
         'scikit-learn>=0.19.0',
         'nltk>=3.2.4'
