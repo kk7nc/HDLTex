@@ -63,6 +63,3 @@ install:
 # command to run tests
 test_script:
   python HDLTex.py;
-  
-test_script:
-  - python HDLTex\HDLTex.py conda-recipe
