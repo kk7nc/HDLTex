@@ -1,4 +1,4 @@
-|DOI| |travis| |wercker status| |Join the chat at
+|DOI| |travis| |appveyor| |wercker status| |Join the chat at
 https://gitter.im/HDLTex| |arXiv| |RG| |Binder| |license|
 
 HDLTex: Hierarchical Deep Learning for Text Classification
@@ -160,6 +160,8 @@ Citation:
    :target: https://app.wercker.com/project/byKey/24a123448ba8764b257a1df242146b8e
 .. |Join the chat at https://gitter.im/HDLTex| image:: https://badges.gitter.im/Join%20Chat.svg
    :target: https://gitter.im/HDLTex/Lobby?source=orgpage
+.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/kk7nc/HDLTex?branch=master&svg=true
+    :target: https://ci.appveyor.com/project/kk7nc/hdltex
 .. |arXiv| image:: https://img.shields.io/badge/arXiv-1709.08267-red.svg?style=flat
    :target: https://arxiv.org/abs/1709.08267
 .. |RG| image:: https://img.shields.io/badge/ResearchGate-HDLTex-blue.svg?style=flat
