@@ -48,8 +48,6 @@ matrix:
     - MINICONDA: C:\Miniconda3-x64
     - MINICONDA: C:\Miniconda36-x64
 
-init:
-  - "set PATH=%MINICONDA%;%MINICONDA%\\Scripts;%MINICONDA%\\Library\\bin;%PATH%"
 
 # command to run tests
 test_script:
