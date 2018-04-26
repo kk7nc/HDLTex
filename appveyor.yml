@@ -51,4 +51,4 @@ matrix:
 
 # command to run tests
 test_script:
-  python C:\projects\hdltex\HDLTex.py;
+  pytest
