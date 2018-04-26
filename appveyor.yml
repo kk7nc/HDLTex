@@ -65,6 +65,7 @@ install:
   - "pip install scikit-learn"
   - "pip install nltk"
   - "pip install --upgrade tensorflow"
+  - "pip install keras"
   
   - "echo done"
 # command to run tests
