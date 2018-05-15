@@ -87,7 +87,7 @@ Web of Science Dataset
         This dataset contains 5,736 documents with 11 categories which include 3 parents categories.
 
 Requirements :
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 General:
 
 Python 3.5 or later see `Instruction
