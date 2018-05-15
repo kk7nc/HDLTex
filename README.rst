@@ -70,7 +70,6 @@ Web of Science Dataset
 
         This dataset contains 11,967 documents with 35 categories which include 7 parents categories.
         
-
 Web of Science Dataset
 `WOS-46985 <http://dx.doi.org/10.17632/9rw3vkcfy4.2>`__
 
@@ -78,7 +77,6 @@ Web of Science Dataset
 
         This dataset contains 46,985 documents with 134 categories which include 7 parents categories.
       
-
 Web of Science Dataset
 `WOS-5736 <http://dx.doi.org/10.17632/9rw3vkcfy4.2>`__
 
