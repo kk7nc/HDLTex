@@ -10,7 +10,6 @@ Classification <https://arxiv.org/abs/1709.08267>`__
 
 |Pic|
 
-
 Installation
 ------------
 
