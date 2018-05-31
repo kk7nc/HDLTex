@@ -11,21 +11,21 @@ Classification <https://arxiv.org/abs/1709.08267>`__
 |Pic|
 
 Documentation:
---------------
+===============
 
 Increasingly large document collections require improved information processing methods for searching, retrieving, and organizing  text. Central to these information processing methods is document classification, which has become an important application for supervised learning. Recently the performance of traditional supervised classifiers has degraded as the number of documents has increased. This is because along with growth in the number of documents has come an increase in the number of categories. This paper approaches this problem differently from current document classification methods that view the problem as multi-class classification. Instead we perform hierarchical classification using an approach we call Hierarchical Deep Learning for Text classification (HDLTex). HDLTex employs stacks of deep learning architectures to provide specialized understanding at each level of the document hierarchy.
 
 Installation
--------------
+=============
 
 Using pip
-~~~~~~~~~
+----------
 .. code:: bash
     
     pip install HDLTex
     
 Using git
-~~~~~~~~~
+----------
 .. code:: bash
 
     git clone --recursive https://github.com/kk7nc/HDLTex.git
@@ -60,7 +60,7 @@ If the above command does not work, use the following:
 
 
 Datasets for HDLTex:
---------------------
+=====================
 
 Linke of dataset: |Data|
 
@@ -88,7 +88,7 @@ Web of Science Dataset
         This dataset contains 5,736 documents with 11 categories which include 3 parents categories.
 
 Requirements :
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------
 General:
 
 Python 3.5 or later see `Instruction
@@ -124,8 +124,10 @@ To install this library, issue the following command:
 ::
 
         $ sudo apt-get install libcupti-dev
-
-**Feature Extraction:**
+        
+        
+Feature Extraction:
+===================
 
 Global Vectors for Word Representation
 (`GLOVE <https://nlp.stanford.edu/projects/glove/>`__)
@@ -137,12 +139,12 @@ Global Vectors for Word Representation
         
 
 Error and Comments:
--------------------
+===================
 
 Send an email to kk7nc@virginia.edu
 
 Citation:
----------
+=========
 
 .. code:: bash
 
