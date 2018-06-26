@@ -104,22 +104,19 @@ Keras see `Instruction Documents <https://keras.io/>`__
 
 scipy see `Instruction Documents <https://www.scipy.org/install.html>`__
 
-GPU:
+- GPU:
 
-CUDA® Toolkit 8.0. For details, see `NVIDIA’s
-documentation <https://developer.nvidia.com/cuda-toolkit>`__.
+ - CUDA® Toolkit 8.0. For details, see `NVIDIA’s documentation <https://developer.nvidia.com/cuda-toolkit>`__.
 
-The `NVIDIA drivers associated with CUDA Toolkit
-8.0 <http://www.nvidia.com/Download/index.aspx>`__.
+ - The `NVIDIA drivers associated with CUDA Toolkit 8.0 <http://www.nvidia.com/Download/index.aspx>`__.
 
-cuDNN v6. For details, see `NVIDIA’s
-documentation <https://developer.nvidia.com/cudnn>`__.
+ - cuDNN v6. For details, see `NVIDIA’s documentation <https://developer.nvidia.com/cudnn>`__.
 
-GPU card with CUDA Compute Capability 3.0 or higher.
+ - GPU card with CUDA Compute Capability 3.0 or higher.
 
-The libcupti-dev library,
+ - The libcupti-dev library,
 
-To install this library, issue the following command:
+ - To install this library, issue the following command:
 
 ::
 
