@@ -92,16 +92,12 @@ Requirements :
 General:
 
 - Python 3.5 or later see `Instruction Documents <https://www.python.org/>`__
-
 - TensorFlow see `Instruction Documents <https://www.tensorflow.org/install/install_linux>`__.
-
 - scikit-learn see `Instruction Documents <http://scikit-learn.org/stable/install.html>`__
-
 - Keras see `Instruction Documents <https://keras.io/>`__
-
 - scipy see `Instruction Documents <https://www.scipy.org/install.html>`__
+- GPU
 
-- GPU:
     - CUDA® Toolkit 8.0. For details, see `NVIDIA’s documentation <https://developer.nvidia.com/cuda-toolkit>`__.
     - The `NVIDIA drivers associated with CUDA Toolkit 8.0 <http://www.nvidia.com/Download/index.aspx>`__.
     - cuDNN v6. For details, see `NVIDIA’s documentation <https://developer.nvidia.com/cudnn>`__.
