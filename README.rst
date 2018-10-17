@@ -97,7 +97,6 @@ General:
 - Keras see `Instruction Documents <https://keras.io/>`__
 - scipy see `Instruction Documents <https://www.scipy.org/install.html>`__
 - GPU
-
     - CUDA® Toolkit 8.0. For details, see `NVIDIA’s documentation <https://developer.nvidia.com/cuda-toolkit>`__.
     - The `NVIDIA drivers associated with CUDA Toolkit 8.0 <http://www.nvidia.com/Download/index.aspx>`__.
     - cuDNN v6. For details, see `NVIDIA’s documentation <https://developer.nvidia.com/cudnn>`__.
