@@ -1,6 +1,17 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+RMDL: Random Multimodel Deep Learning for Classification
+
+* Copyright (C) 2018  Kamran Kowsari <kk7nc@virginia.edu>
+* Last Update: Oct 26, 2018
+* This file is part of  HDLTex project, University of Virginia.
+* Free to use, change, share and distribute source code of RMDL
+* Refrenced paper : HDLTex: Hierarchical Deep Learning for Text Classification
+* Link: https://doi.org/10.1109/ICMLA.2017.0-134
+* Comments and Error: email: kk7nc@virginia.edu
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 import os
 os.environ['KERAS_BACKEND'] = 'tensorflow'
-#os.environ["THEANO_FLAGS"] = "mode=FAST_RUN"
 
 import numpy as np
 from keras.models import Sequential
@@ -8,10 +19,6 @@ import Data_helper
 import BuildModel
 
 if __name__ == "__main__":
-
-    #os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-    #os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-
     MEMORY_MB_MAX = 1600000 # maximum memory you can use
     MAX_SEQUENCE_LENGTH = 500 # Maximum sequance lenght 500 words
     MAX_NB_WORDS = 55000 # Maximum number of unique words

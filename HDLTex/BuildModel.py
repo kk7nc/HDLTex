@@ -1,3 +1,15 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+RMDL: Random Multimodel Deep Learning for Classification
+
+* Copyright (C) 2018  Kamran Kowsari <kk7nc@virginia.edu>
+* Last Update: Oct 26, 2018
+* This file is part of  HDLTex project, University of Virginia.
+* Free to use, change, share and distribute source code of RMDL
+* Refrenced paper : HDLTex: Hierarchical Deep Learning for Text Classification
+* Link: https://doi.org/10.1109/ICMLA.2017.0-134
+* Comments and Error: email: kk7nc@virginia.edu
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 from keras.models import Sequential
 from keras.models import Model
 import numpy as np
