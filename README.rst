@@ -1,5 +1,5 @@
 |DOI| |travis| |appveyor| |wercker status| |Join the chat at
-https://gitter.im/HDLTex| |arXiv| |RG| |Binder| |license| |twitter|
+https://gitter.im/HDLTex| |arXiv| |RG| |Binder| |Download| |license| |twitter| 
 
 HDLTex: Hierarchical Deep Learning for Text Classification
 ==========================================================
@@ -166,3 +166,6 @@ Citation:
 .. |twitter| image:: https://img.shields.io/twitter/url/http/shields.io.svg?style=social
    :target: https://twitter.com/intent/tweet?text=HDLTex:%20Hierarchical%20Deep%20Learning%20for%20Text%20Classification%0aGitHub:&url=https://github.com/kk7nc/HDLTex&hashtags=DeepLearning,Text_Classification,classification,MachineLearning,deep_neural_networks
        
+.. |Download| image:: https://pepy.tech/badge/hdltex
+   :target: https://pepy.tech/project/hdltex
+   
