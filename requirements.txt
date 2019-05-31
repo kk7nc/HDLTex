@@ -4,5 +4,6 @@ pandas>=0.22.0
 scipy
 tensorflow
 keras
+rmdl
 scikit-learn
 nltk>=3.2.4
