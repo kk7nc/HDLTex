@@ -1,5 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-RMDL: Random Multimodel Deep Learning for Classification
+HDLTex: Hierarchical Deep Learning for Text Classification
+module for building of different deep learning models (DNN, RNN, CNN)
 
 * Copyright (C) 2018  Kamran Kowsari <kk7nc@virginia.edu>
 * Last Update: Oct 26, 2018
@@ -80,6 +81,7 @@ def buildModel_CNN(word_index,embeddings_index,nClasses,MAX_SEQUENCE_LENGTH,EMBE
     Complexity we have two different CNN model as follows 
     Complexity=0 is simple CNN with 3 hidden layer
     Complexity=2 is more complex model of CNN with filter_length of [3, 4, 5, 6, 7]
+    return: (CNN model) model
     '''
     if Complexity==0:
         embedding_matrix = np.random.random((len(word_index) + 1, EMBEDDING_DIM))
