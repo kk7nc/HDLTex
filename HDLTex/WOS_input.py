@@ -1,5 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-RMDL: Random Multimodel Deep Learning for Classification
+HDLTex: Hierarchical Deep Learning for Text Classification
+Script to download and extract Web Of Science datasets
 
 * Copyright (C) 2018  Kamran Kowsari <kk7nc@virginia.edu>
 * Last Update: Oct 26, 2018
