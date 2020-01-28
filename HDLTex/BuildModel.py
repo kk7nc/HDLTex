@@ -15,16 +15,17 @@ from keras.models import Model
 import numpy as np
 from keras.layers import Dense, Input, Flatten
 from keras.layers import Conv1D, MaxPooling1D, Embedding, Merge, Dropout, LSTM, GRU, Bidirectional,SimpleRNN
-'''
-buildModel_DNN(nFeatures, nClasses, nLayers=3,Numberof_NOde=100, dropout=0.5)
-Build Deep neural networks Model for text classification
-Shape is input feature space
-nClasses is number of classes
-nLayers is number of hidden Layer
-Number_Node is number of unit in each hidden layer
-dropout is dropout value for solving overfitting problem
-'''
+
 def buildModel_DNN(Shape, nClasses, nLayers=3,Number_Node=100, dropout=0.5):
+    '''
+    buildModel_DNN(nFeatures, nClasses, nLayers=3,Numberof_NOde=100, dropout=0.5)
+    Build Deep neural networks (Multi-layer perceptron) Model for text classification
+    Shape is input feature space
+    nClasses is number of classes
+    nLayers is number of hidden Layer
+    Number_Node is number of unit in each hidden layer
+    dropout is dropout value for solving overfitting problem
+    '''
     model = Sequential()
     model.add(Dense(Number_Node, input_dim=Shape))
     model.add(Dropout(dropout))
@@ -45,6 +46,7 @@ embeddings_index is embeddings index, look at data_helper.py
 nClasses is number of classes, 
 MAX_SEQUENCE_LENGTH is maximum lenght of text sequences, 
 EMBEDDING_DIM is an int value for dimention of word embedding look at data_helper.py 
+output: DNN model
 '''
 def buildModel_RNN(word_index, embeddings_index, nClasses, MAX_SEQUENCE_LENGTH, EMBEDDING_DIM):
     model = Sequential()
@@ -65,18 +67,19 @@ def buildModel_RNN(word_index, embeddings_index, nClasses, MAX_SEQUENCE_LENGTH, 
                   optimizer='rmsprop',
                   metrics=['acc'])
     return model
-'''
-def buildModel_CNN(word_index,embeddings_index,nClasses,MAX_SEQUENCE_LENGTH,EMBEDDING_DIM,Complexity=0):
-word_index in word index , 
-embeddings_index is embeddings index, look at data_helper.py 
-nClasses is number of classes, 
-MAX_SEQUENCE_LENGTH is maximum lenght of text sequences, 
-EMBEDDING_DIM is an int value for dimention of word embedding look at data_helper.py 
-Complexity we have two different CNN model as follows 
-Complexity=0 is simple CNN with 3 hidden layer
-Complexity=2 is more complex model of CNN with filter_length of [3, 4, 5, 6, 7]
-'''
+
 def buildModel_CNN(word_index,embeddings_index,nClasses,MAX_SEQUENCE_LENGTH,EMBEDDING_DIM,Complexity=1):
+    '''
+    def buildModel_CNN(word_index,embeddings_index,nClasses,MAX_SEQUENCE_LENGTH,EMBEDDING_DIM,Complexity=0):
+    word_index in word index , 
+    embeddings_index is embeddings index, look at data_helper.py 
+    nClasses is number of classes, 
+    MAX_SEQUENCE_LENGTH is maximum lenght of text sequences, 
+    EMBEDDING_DIM is an int value for dimention of word embedding look at data_helper.py 
+    Complexity we have two different CNN model as follows 
+    Complexity=0 is simple CNN with 3 hidden layer
+    Complexity=2 is more complex model of CNN with filter_length of [3, 4, 5, 6, 7]
+    '''
     if Complexity==0:
         embedding_matrix = np.random.random((len(word_index) + 1, EMBEDDING_DIM))
         for word, i in word_index.items():
