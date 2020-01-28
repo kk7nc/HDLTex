@@ -39,16 +39,17 @@ def buildModel_DNN(Shape, nClasses, nLayers=3,Number_Node=100, dropout=0.5):
 
     return model
 
-'''
+
 def buildModel_RNN(word_index, embeddings_index, nClasses, MAX_SEQUENCE_LENGTH, EMBEDDING_DIM):
-word_index in word index , 
-embeddings_index is embeddings index, look at data_helper.py 
-nClasses is number of classes, 
-MAX_SEQUENCE_LENGTH is maximum lenght of text sequences, 
-EMBEDDING_DIM is an int value for dimention of word embedding look at data_helper.py 
-output: DNN model
-'''
-def buildModel_RNN(word_index, embeddings_index, nClasses, MAX_SEQUENCE_LENGTH, EMBEDDING_DIM):
+    '''
+    def buildModel_RNN(word_index, embeddings_index, nClasses, MAX_SEQUENCE_LENGTH, EMBEDDING_DIM):
+    word_index in word index , 
+    embeddings_index is embeddings index, look at data_helper.py 
+    nClasses is number of classes, 
+    MAX_SEQUENCE_LENGTH is maximum lenght of text sequences, 
+    EMBEDDING_DIM is an int value for dimention of word embedding look at data_helper.py 
+    output: RNN model
+    '''
     model = Sequential()
     embedding_matrix = np.random.random((len(word_index) + 1, EMBEDDING_DIM))
     for word, i in word_index.items():
