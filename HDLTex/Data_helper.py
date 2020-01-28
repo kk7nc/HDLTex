@@ -1,5 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-RMDL: Random Multimodel Deep Learning for Classification
+HDLTex: Hierarchical Deep Learning for Text Classification
+load and tokenization module the input strings for deep learning model
 
 * Copyright (C) 2018  Kamran Kowsari <kk7nc@virginia.edu>
 * Last Update: Oct 26, 2018
@@ -37,6 +38,11 @@ def clean_str(string):
     return string.strip().lower()
 
 def text_cleaner(text):
+    """
+    cleaning spaces, html tags, etc
+    parameters: (string) text input to clean
+    return: (string) clean_text 
+    """
     text = text.replace(".", "")
     text = text.replace("[", " ")
     text = text.replace(",", " ")
@@ -63,7 +69,8 @@ def text_cleaner(text):
             text = regex.sub(v, text)
         text = text.rstrip()
         text = text.strip()
-    return text.lower()
+    clean_text = text.lower()
+    return clean_text
 
 
 def loadData_Tokenizer(MAX_NB_WORDS,MAX_SEQUENCE_LENGTH):
