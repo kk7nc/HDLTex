@@ -161,7 +161,7 @@ Citation:
    :target: https://github.com/kk7nc/HDLTex/blob/master/LICENSE
 .. |Data| image:: https://img.shields.io/badge/DOI-10.17632/9rw3vkcfy4.6-blue.svg?style=flat
    :target: http://dx.doi.org/10.17632/9rw3vkcfy4.6
-.. |Pic| image:: http://kowsari.net/____impro/1/onewebmedia/HDLTex.png?etag=W%2F%22c90cd-59c4019b%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=821%2B326&extract=0%2B0%2B821%2B325?raw=false
+.. |Pic| image:: docs/HDLTex.png
    :alt: HDLTex as both Hierarchy lavel are DNN
 .. |twitter| image:: https://img.shields.io/twitter/url/http/shields.io.svg?style=social
    :target: https://twitter.com/intent/tweet?text=HDLTex:%20Hierarchical%20Deep%20Learning%20for%20Text%20Classification%0aGitHub:&url=https://github.com/kk7nc/HDLTex&hashtags=DeepLearning,Text_Classification,classification,MachineLearning,deep_neural_networks
