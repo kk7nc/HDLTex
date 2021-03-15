@@ -141,7 +141,7 @@ Citation:
     month={Dec}
     }
 
-.. |DOI| image:: http://kowsari.net/HDLTex_DOI.svg?maxAge=2592000
+.. |DOI| image:: https://img.shields.io/badge/DOI-10.1109%2FICMLA.2017.0--134-blue
    :target: https://doi.org/10.1109/ICMLA.2017.0-134
 .. |travis| image:: https://travis-ci.org/kk7nc/HDLTex.svg?branch=master
    :target: https://travis-ci.org/kk7nc/HDLTex
