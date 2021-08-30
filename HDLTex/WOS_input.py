@@ -30,7 +30,7 @@ print(sys.version_info)
 DATA_DIR = '.\data_WOS'
 
 # url of the binary data
-DATA_URL = 'http://kowsari.net/WebOfScience.tar.gz'
+DATA_URL = 'https://www.researchgate.net/profile/Kamran-Kowsari/publication/321038556_Web_Of_Science_Dataset/data/5a09f9daaca272d40f412017/Dataset.zip?_sg%5B0%5D=T2IX7UKFm_80V4eGOmcEHFMZtHsfBS6p-MygLIgLue98TNFPiXVMFnGx5pK4e3eAinN4Z262MwNq2w-Gtzo5tg.iy1QPikF7AeR3p2iJ887KoJAQN1DvSCD1oUiDjAsA5ib8mgfdaDPXxqeWlzJ6et-PqiMabXc5QItGMERJV4VOA&_sg%5B1%5D=avnfE9AjAykTfiJF4GtikC-t-Y7pjrrh6yHA9IyEqdSAoGnIAOpEMruo8L3cEO3110HUU6XVxPNMvIJniYf5Mp5P5Dg6gQgLTlp14INYDaki.iy1QPikF7AeR3p2iJ887KoJAQN1DvSCD1oUiDjAsA5ib8mgfdaDPXxqeWlzJ6et-PqiMabXc5QItGMERJV4VOA&_iepl='
 
 
 # path to the binary train file with image data
