@@ -7,3 +7,4 @@ keras
 rmdl
 scikit-learn
 nltk>=3.2.4
+virtualenv
