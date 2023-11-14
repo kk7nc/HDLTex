@@ -1,4 +1,4 @@
-|DOI| |travis| |wercker status|  |appveyor| |Join the chat at
+|DOI| |appveyor| |Join the chat at
 https://gitter.im/HDLTex| |arXiv| |RG| |Binder| |Download| |license| |twitter| 
 
 HDLTex: Hierarchical Deep Learning for Text Classification
