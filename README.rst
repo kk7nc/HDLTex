@@ -62,7 +62,7 @@ If the above command does not work, use the following:
 Datasets for HDLTex:
 =====================
 
-Linke of dataset: |Data|
+Link of dataset: |Data|
 
 Web of Science Dataset
 `WOS-11967 <http://dx.doi.org/10.17632/9rw3vkcfy4.2>`__
